@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        --background: #E5E5E5;
+        --background: #F0F2F5;
         --red: #F7685B;
         --green: #33CC95; 
         --blue: #109CF1;
@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: var(--background-color);
+        background-color: var(--background);
         -webkit-font-smoothing: antialiased;
     }
 

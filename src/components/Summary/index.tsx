@@ -2,11 +2,16 @@ import { useContext } from "react";
 import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
 import totalImg from "../../assets/total.svg";
+<<<<<<< HEAD
 import { useTransactions } from "../../hooks/useTransactions";
+=======
+import { TransactionsContext } from "../../TransactionsContext";
+>>>>>>> 9a6ebfea7e43da309ad623b6bf546c4f72acc29e
 
 import { Container } from "./styles";
 
 export function Summary() {
+<<<<<<< HEAD
   const { transactions } = useTransactions();
 
   // const total = transactions.reduce((acc, transaction) => {
@@ -35,6 +40,11 @@ export function Summary() {
       total: 0,
     }
   );
+=======
+  const transactions = useContext(TransactionsContext);
+
+  console.log(transactions);
+>>>>>>> 9a6ebfea7e43da309ad623b6bf546c4f72acc29e
 
   return (
     <Container>
